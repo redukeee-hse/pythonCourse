@@ -1,20 +1,13 @@
 # pythonCourse
 # Предустановка
-pip install pre-commit # Установка pre-commit
+```pip install pre-commit # Установка pre-commit```
 
-pre-commit install #  Установка хуков
+```pre-commit install #  Установка хуков```
 
-touch .pre-commit-config.yaml # Создание файла .pre-commit-config.yaml
-
-Добавьте базовую конфигурацию в .pre-commit-config.yaml:
-  repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
-    hooks:
-      - id: check-yaml # Проверка на валидность всех .yaml файлов
+```touch .pre-commit-config.yaml # Создание файла .pre-commit-config.yaml```
 
 # Структура хуков в .yaml файле
-repos:
+```repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks # Ссылка на гит хука
     rev: v4.4.0  # Версия или тег репозитория
     hooks:       # Список хуков из этого репозитория
@@ -32,9 +25,9 @@ repos:
 
       - id: end-of-file-fixer  # Еще один хук из того же репозитория
       //  Можно указать только id, остальное по умолчанию
-
+```
 # Примеры настройки хуков через .yaml файл
-repos:
+```repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
@@ -82,3 +75,4 @@ repos:
       language: system
       types: [python]
       stages: [commit]
+```
