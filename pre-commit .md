@@ -1,4 +1,3 @@
-# pythonCourse
 # Предустановка
 ```pip install pre-commit # Установка pre-commit```
 
